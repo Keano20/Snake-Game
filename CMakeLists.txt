@@ -4,9 +4,9 @@ project(Snake_Game)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Snake_Game main.cpp
-        Snake.h
-        Game.h
-        Food.h
+        Headers/Snake.h
+        Headers/Game.h
+        Headers/Food.h
         Snake.cpp
         Game.cpp
         Food.cpp)
