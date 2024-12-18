@@ -9,7 +9,6 @@ A classic Snake game implemented in C++ using the SFML library for graphics and 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
-- [License](#license)
 
 ## 👋 Introduction
 
