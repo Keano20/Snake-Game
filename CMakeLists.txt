@@ -7,7 +7,9 @@ add_executable(Snake_Game main.cpp
         Snake.h
         Game.h
         Food.h
-        Snake.cpp)
+        Snake.cpp
+        Game.cpp
+        Food.cpp)
 find_package(SFML COMPONENTS system window graphics audio network REQUIRED)
 
 include_directories(/opt/homebrew/Cellar/sfml/2.6.2/include/SFML)
