@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(1080,720), "Hungry Snake");
+    sf::RenderWindow window(sf::VideoMode(800,600), "Hungry Snake");
 
     while (window.isOpen()){
         sf::Event event{};
