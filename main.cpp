@@ -1,24 +1,40 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Headers/Snake.h"
+#include "Headers/Food.h"
 
 int main() {
+    // Set up the game window
     sf::RenderWindow window(sf::VideoMode(800, 600), "Hungry Snake");
-    window.setFramerateLimit(60); // Limits the framerate
+    window.setFramerateLimit(60);
 
-    // The game loop
+    // Initialize the Food object
+    Food food(800 / 20, 600 / 20); // Grid size for food (20x20 blocks)
+    sf::RectangleShape foodShape(sf::Vector2f(20.f, 20.f)); // Food size: 20x20 pixels
+    foodShape.setFillColor(sf::Color::Red); // Red food color
+
+    // Game loop
     while (window.isOpen()) {
+        // Handle window events
         sf::Event event{};
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
 
-        // Clear the window with a color
-        window.clear(sf::Color(201, 253, 201)); // Green background
+        // Clear the screen with a green background
+        window.clear(sf::Color(201, 253, 201));
+
+        // Draw the food
+        foodShape.setPosition(food.getX() * 20.f, food.getY() * 20.f);
+        window.draw(foodShape);
 
         // Display the content
         window.display();
+
+        // Temporary: Pressing 'R' will regenerate food position for testing
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
+            food.generateNewPosition();
+        }
     }
 
     return 0;
