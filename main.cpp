@@ -31,10 +31,6 @@ int main() {
         // Display the content
         window.display();
 
-        // Temporary: Pressing 'R' will regenerate food position for testing
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
-            food.generateNewPosition();
-        }
     }
 
     return 0;
