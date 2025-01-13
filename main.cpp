@@ -1,11 +1,12 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Headers/Food.h"
+#include "Headers/Snake.h"
 
 int main() {
     // Set up the game window
     sf::RenderWindow window(sf::VideoMode(800, 600), "Hungry Snake");
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(10);
 
     // Initialize the Food object
     Food food(800 / 20, 600 / 20); // Grid size for food (20x20 blocks)
