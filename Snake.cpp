@@ -33,3 +33,13 @@ void Snake::setDirection(sf::Vector2f newDirection) {
         canChangeDirection = false;
     }
 }
+
+// Get the head position
+sf::Vector2f Snake::getHeadPosition() const {
+    return body[0].getPosition();
+}
+
+// Get the body
+const std::vector<sf::RectangleShape>& Snake::getBody() const {
+    return body;
+}
