@@ -17,3 +17,11 @@ void Snake::move() {
     body[0].move(direction.x * blockSize, direction.y * blockSize);
     canChangeDirection = true;
 }
+
+// Grow the snake
+void Snake::grow() {
+    sf::RectangleShape newSegment(sf::Vector2f(blockSize, blockSize));
+    newSegment.setFillColor(sf::Color::Green);
+    newSegment.setPosition(body.back().getPosition());
+    body.push_back(newSegment);
+}
