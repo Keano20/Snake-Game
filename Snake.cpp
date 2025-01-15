@@ -43,3 +43,14 @@ sf::Vector2f Snake::getHeadPosition() const {
 const std::vector<sf::RectangleShape>& Snake::getBody() const {
     return body;
 }
+
+// Check for self-collision
+bool Snake::checkSelfCollision() const {
+    sf::Vector2f headPosition = body[0].getPosition();
+    for (std::size_t i = 1; i < body.size(); ++i) {
+        if (body[i].getPosition() == headPosition) {
+            return true;
+        }
+    }
+    return false;
+}
