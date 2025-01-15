@@ -9,3 +9,11 @@ Snake::Snake(float blockSize)
     body.push_back(head);
 }
 
+// Move the snake
+void Snake::move() {
+    for (std::size_t i = body.size() - 1; i > 0; --i) {
+        body[i].setPosition(body[i - 1].getPosition());
+    }
+    body[0].move(direction.x * blockSize, direction.y * blockSize);
+    canChangeDirection = true;
+}
