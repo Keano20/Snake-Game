@@ -25,3 +25,11 @@ void Snake::grow() {
     newSegment.setPosition(body.back().getPosition());
     body.push_back(newSegment);
 }
+
+// Change direction
+void Snake::setDirection(sf::Vector2f newDirection) {
+    if (canChangeDirection && (direction.x + newDirection.x != 0 || direction.y + newDirection.y != 0)) {
+        direction = newDirection;
+        canChangeDirection = false;
+    }
+}
