@@ -29,6 +29,7 @@ This project is a simple Snake game where players control a snake to eat food, g
 
 2. Install the SFML library:
    - Follow the [official SFML installation guide](https://www.sfml-dev.org/tutorials/2.5/start-linux.php) for your platform.
+   - Make sure you add the SFML file directory to CMakeList.txt
 
 ## Usage
 
