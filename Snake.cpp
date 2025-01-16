@@ -44,7 +44,7 @@ const std::vector<sf::RectangleShape>& Snake::getBody() const {
     return body;
 }
 
-// Check for self-collision
+// Check for self-collision (Currently un-used as I intend to change how this works at a later date)
 bool Snake::checkSelfCollision() const {
     sf::Vector2f headPosition = body[0].getPosition();
     for (std::size_t i = 1; i < body.size(); ++i) {
