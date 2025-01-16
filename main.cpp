@@ -42,12 +42,7 @@ int main() {
         // Check if the snake eats the food
         if (snake->getHeadPosition() == sf::Vector2f(food->getX() * 20, food->getY() * 20)) {
             snake->grow();
-        }
-
-        // Check for self-collisions
-        if (snake->checkSelfCollision()){
-            std::cout << "Game Over!" << std::endl;
-            window.close();
+            food->respawn();
         }
 
         // Clear the screen with a green background

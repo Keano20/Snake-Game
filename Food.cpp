@@ -5,11 +5,11 @@
 // Constructor
 Food::Food(int gridWidth, int gridHeight): gridWidth(gridWidth), gridHeight(gridHeight) {
     std::srand(static_cast<unsigned>(std::time(0))); // Seed the random number generator
-    generateNewPosition();
+    respawn();
 }
 
 // Generate a new random position for the food
-void Food::generateNewPosition() {
+void Food::respawn() {
     x = std::rand() % gridWidth;
     y = std::rand() % gridHeight;
 }

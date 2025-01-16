@@ -10,7 +10,7 @@ private:
 
 public:
     Food(int gridWidth, int gridHeight); // Constructor
-    void generateNewPosition();         // Generate new random position
+    void respawn();                     // Generate new random position
     int getX() const;                   // Get the X position
     int getY() const;                   // Get the Y position
 };
