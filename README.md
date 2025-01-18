@@ -1,4 +1,4 @@
-# 🐍 Snake Game
+# 🐍 Hungry Snake
 
 A classic Snake game implemented in C++ using the SFML library for graphics and input handling.
 
