@@ -12,7 +12,7 @@ A classic Snake game implemented in C++ using the SFML library for graphics and 
 
 ## 👋 Introduction
 
-This project is a simple Snake game where players control a snake to eat food, growing longer with each piece consumed. The game ends when the snake collides with itself or the walls. SFML is used to handle graphics and input, providing a smooth and enjoyable gameplay experience.
+This project is a simple Snake game where players control a snake to eat food, growing longer with each piece consumed. SFML is used to handle graphics and input, providing a smooth and enjoyable gameplay experience.
 
 ##  Features
 
