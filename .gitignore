@@ -1,1 +1,3 @@
 cmake-build-debug
+Game.cpp
+Headers/Game.h
