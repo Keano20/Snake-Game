@@ -1,8 +1,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <memory>
-#include "Headers/Food.h"
-#include "Headers/Snake.h"
+#include "include/Food.h"
+#include "include/Snake.h"
 
 int main() {
     // Set up the game window

@@ -1,4 +1,4 @@
-#include "Headers/Snake.h"
+#include "../include/Snake.h"
 
 // Constructor: Initialize the snake
 Snake::Snake(float blockSize)

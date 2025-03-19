@@ -4,12 +4,12 @@ project(Snake_Game)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(Snake_Game main.cpp
-        Headers/Snake.h
-        Headers/Game.h
-        Headers/Food.h
-        Snake.cpp
-        Game.cpp
-        Food.cpp)
+        include/Snake.h
+        include/Game.h
+        include/Food.h
+        src/Snake.cpp
+        src/Game.cpp
+        src/Food.cpp)
 find_package(SFML COMPONENTS system window graphics audio network REQUIRED)
 
 include_directories(/opt/homebrew/Cellar/sfml/2.6.2/include/SFML)
